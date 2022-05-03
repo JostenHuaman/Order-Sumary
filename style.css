@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.contenedor{
+    width: 360px;
+    height: 500px;    
+    margin: 200px auto;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.contenedor_img{
+    width: 100%;
+    height: 30%;
+}
+
+.contenedor_img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
+}
+
+.contenedor_text{
+    width: 70%;
+    height: 70%;
+    margin: 12px auto;
+    text-align: center;
+    padding-top: 24px;    
+}
+.contenedor_text_first{
+    width: 100%;
+    margin-bottom: 24px;
+}
+.contenedor_text_first p{
+    width: 80%;
+    margin: auto;
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: hsl(223, 47%, 23%);
+    font-weight: bold;
+}
+
+.contenedor_text_first span{
+    width: 50%;
+    font-size: 12px;
+    color:  hsl(224, 23%, 55%);    
+}
+
+.contenedor_plan{
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr;
+    margin-bottom: 24px;
+    align-items: center;
+    justify-items: stretch;
+}
+
+.contenedor_plan img{
+    width: 40px;
+}
+
+.contenedor_plan_text{
+    width: 100%;
+    font-size: 12px;
+    color:hsl(223, 47%, 23%);
+    margin-left: 8px;
+    line-height: 150%;
+}
+
+.contenedor_plan .contenedor_plan_text .contenedor_plan_price{  
+    
+    color: hsl(224, 23%, 55%);
+}
+
+.contenedor_plan a{
+    font-size: 10px;
+    text-align: end;
+    font-weight: bold;
+}
+
+.contenedor_button{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contenedor_button button{
+    width: 100%;
+    height: 36px;
+    font-size: 12px;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    border-radius: 8px;
+    border-color:hsl(245, 75%, 52%) ;
+}
+
+.contenedor_end{
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor_end p{
+    font-size: 12px;
+    color:hsl(224, 23%, 55%)
+}
+
+@media only screen and (max-width: 400px ){
+    .contenedor{
+        margin: 64px auto;
+        width: 90%;
+        height: 560px;
+    }
+
+    .contenedor_text_first span{
+        font-size: 14px;
+        line-height: 180%;
+    }
+
+    .contenedor_plan{
+        height: 80px;
+        margin-bottom: 12px;
+    }
+    .contenedor_plan_text{
+        font-size: 16px;
+        margin-left: 16px;
+    }
+    
+    .contenedor_plan a{
+        font-size: 12px;
+    }   
+    .contenedor_button{
+        margin-bottom: 20px;
+    }
+    .contenedor_button button{
+        height: 48px;        
+        font-size: 16px;
+    }
+
+    .contenedor_end p{
+        font-size: 16px;
+        
+    }
+}
